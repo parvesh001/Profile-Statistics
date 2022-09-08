@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ .container{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+} 
+
+
+ .logo-container{
+    margin:20px;
+    border: dotted 2px green;
+    width: 200px;
+    height: 100px;
+    position: relative;
+}
+
+.fa-3x{
+    position: absolute;
+    left:50%;
+    top:-30%;
+    transform: translateX(-50%);
+}
+
+.number{
+    font-size: 40px;
+    position: absolute;
+    left:50%;
+    top:15%;
+    transform: translateX(-50%);
+    color:green;
+    font-family: cursive;
+}
+
+h4{
+    white-space: nowrap;
+    font-size: 20px;
+    position: absolute;
+    left:50%;
+    bottom:5%;
+    transform: translateX(-50%);
+    font-family: cursive;
+}
+
+
+@media all and (max-width:600px){
+    .container{
+       flex-direction: column;
+    }
+} 
